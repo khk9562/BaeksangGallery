@@ -1,0 +1,223 @@
+html,
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  padding: 0 30px;
+}
+.sec03,
+.sec04,
+.sec05,
+.sec06 {
+  display: none;
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 7vh;
+  padding: 0 63px;
+  font-size: 1.125rem;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  transition: top 0.2s ease-in-out;
+}
+.nav-up {
+  top: -125px;
+}
+header h1 {
+  order: 2;
+}
+header .menu {
+  order: 1;
+  display: flex;
+  gap: 1.5rem;
+}
+header .loginMenu {
+  order: 3;
+}
+header ul {
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* main */
+main {
+  width: 100vw;
+  height: 100vh;
+}
+section {
+  box-sizing: border-box;
+  width: 100vw;
+  text-align: center;
+}
+/* section1: VISUAL */
+.sec01 {
+  height: 100vh;
+  position: relative;
+  /* border: 1px solid black; */
+  padding-bottom: 63px;
+}
+
+.swiper01 .visualBgWrap {
+  margin: 0;
+  width: 96vw;
+  height: 95vh;
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.swiper01 .visualBgWrap01 {
+  background-image: url(../img/main01.jpg);
+}
+.swiper01 .visualBgWrap02 {
+  background-image: url(../img/main02.jpg);
+}
+.swiper01 .visualBgWrap03 {
+  background-image: url(../img/main03.jpg);
+}
+.swiper01 {
+  padding-bottom: 63px;
+}
+.swiper01 .visualTextWrap {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  padding-left: 50px;
+}
+.swiper01 .visualTextWrap span,
+.swiper01 .visualTextWrap h2 {
+  font-family: "EB Garamond";
+  color: #efefef;
+}
+.swiper01 .swiper-slide .visualTextWrap span {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+.swiper01 .swiper-slide .visualTextWrap h2 {
+  font-size: 55px;
+}
+.swiper01 .swiper-pagination {
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  right: 0;
+  left: auto;
+  z-index: 10;
+  width: 50%;
+  background-color: white;
+  transform: translateY(-52px);
+}
+
+.swiper01 .swiper-pagination-bullet {
+  border-radius: 0;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  color: #333;
+}
+.swiper01 .swiper-pagination-bullet-active {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* section2: BEST ART */
+.sec02 {
+  height: 1560px;
+  padding: 130px 0;
+}
+.secSubTit {
+  font-family: "Noto Serif KR";
+  font-size: 22px;
+  color: #cbae85;
+}
+.secTit {
+  font-family: "EB Garamond";
+  font-size: 42px;
+  letter-spacing: 0.5rem;
+  position: relative;
+}
+.secTIt::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: black;
+  width: 212px;
+  height: 1px;
+}
+.swiper02 {
+  margin-top: 130px;
+}
+.swiper02 .swiper-slide {
+  position: relative;
+}
+/* hover시에만 보여질 카드 */
+.swiper02 .cardCart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  gap: 8rem;
+  background-color: rgba(225, 225, 225, 0.5);
+  width: 300px;
+  height: 400px;
+  padding: 3rem;
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  transform: translateX(-50%) translateY(-50%);
+  display: none;
+}
+.swiper02 .cardCart.active {
+  display: block;
+}
+.swiper02 .cardCart button {
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #999;
+  padding: 10px 20px;
+}
+/* 항상 보여지는 카드 */
+.swiper02 .slideCard img {
+  width: 410px;
+  height: 560px;
+  object-fit: cover;
+  margin-bottom: 40px;
+}
+
+.swiper02 .cardTxt {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.swiper02 .cardTxt h3,
+.swiper02 .cardTxt h4,
+.swiper02 .cardTxt span {
+  font-family: "Noto Serif KR";
+}
+.swiper02 .cardTxt h3 {
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+.swiper02 .cardTxt h4 {
+  color: #cbae85;
+}
+.swiper02 .swiper-pagination02 {
+}
+
+/* section3: MD PICK */
+
+/* section4: NEW ART */
+
+/* section5: BUY */
+
+/* section6: REVIEW */
